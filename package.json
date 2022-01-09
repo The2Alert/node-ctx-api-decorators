@@ -1,26 +1,29 @@
 {
   "name": "ctx-api-decorators",
-  "version": "1.0.0",
-  "description": "Context API.",
+  "version": "1.0.0-beta",
+  "description": "Decorators for Context API.",
+  "keywords": ["context", "ctx", "api"],
+  "repository": "github:dev2alert/node-ctx-api-decorators",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=production node .",
     "compile": "tsc",
     "dev": "cross-env NODE_ENV=development tsc-watch --onSuccess \"node .\""
   },
-  "repository": "github:dev2alert/context-api",
   "author": "dev2alert",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^16.4.13",
-    "tsc-watch": "^4.6.0",
-    "ctx-api": "1.0.0"
-  },
+  "license": "MIT",
   "dependencies": {
     "reflect-metadata": "^0.1.13"
   },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "tsc-watch": "^4.6.0",
+    "ctx-api": "1.0.0-beta"
+  },
   "peerDependencies": {
-    "ctx-api": "1.0.0"
+    "ctx-api": "1.0.0-beta"
   }
 }
